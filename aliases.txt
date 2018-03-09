@@ -1,0 +1,12 @@
+!!!!vimrc stuff
+set number
+set expandtab ts=4 sw=4 ai
+
+!!!bash
+
+alias venv=". /home/webadmin/virtenv/bin/activate"
+alias live="bash ~/pysite/startserver.sh"
+alias manage="python3 manage.py"
+
+export PATH=$PATH:/usr/local/mysql/bin
+export PATH
