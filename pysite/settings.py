@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-#    'pyadmin',
     'pyadmin.apps.PyadminConfig',
+    'scala_site.apps.Scala_siteConfig'
 ]
 
 MIDDLEWARE = [
@@ -77,12 +77,22 @@ WSGI_APPLICATION = 'pysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+    'ENGINE': 'django.db.backends.mysql',
 	'NAME': 'py_db',
 	'USER': 'webadmin',
 	'PASSWORD': '!TRock3!',
 	'HOST': '192.168.50.39',
 	'PORT': '3306',
+     },
+
+    'customer_db' : {
+    'ENGINE': 'django_mongodb_engine',
+	'NAME': 'customer_db',
+	'USER': 'webadmin',
+	'PASSWORD': '!TRock3!',
+	'HOST': '192.168.50.39',
+	'PORT': '27017',
+
      }
 }
 
